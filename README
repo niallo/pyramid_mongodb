@@ -1,0 +1,5 @@
+pyramid_mongodb is a simple Paster template or scaffold for the Pyramid Web
+Framework. It provides URL mapping via traversal and persistence via MongoDB.
+It is based on the "starter" template included in Pyramid core.
+
+See http://docs.pylonsproject.org/projects/pyramid/1.0/narr/project.html#paster-templates-included-with-pyramid

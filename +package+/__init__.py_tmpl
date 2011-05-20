@@ -1,0 +1,28 @@
+from pyramid.config import Configurator
+from pyramid.events import subscriber
+from pyramid.events import NewRequest
+import pymongo
+
+from {{package}}.models import appmaker
+from {{package}}.resources import Roo
+
+def main(global_config, **settings):
+    """ This function returns a WSGI application.
+    """
+    config = Configurator(settings=settings, root_factory=get_root)
+    config.add_view('{{package}}.views.my_view',
+                    context='{{package}}:resources.Root',
+                    renderer='{{package}}:templates/mytemplate.pt')
+    config.add_static_view('static', '{{package}}:static')
+    # MongoDB
+    def add_mongo_db(event):
+        settings = event.request.registry.settings
+        url = settings['mongodb.url']
+        db_name = settings['mongodb.db_name']
+        db = settings['mongodb_conn'][db_name]
+        event.request.db = db
+    db_uri = settings['mongodb.url']
+    conn = pymongo.Connection(db_uri)
+    config.registry.settings['mongodb_conn'] = conn
+    config.add_subscriber(add_mongo_db, NewRequest)
+    return config.make_wsgi_app()

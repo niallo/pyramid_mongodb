@@ -1,0 +1,47 @@
+"""pyramid_mongodb installation script.
+"""
+import os
+
+from setuptools import setup
+from setuptools import find_packages
+
+here = os.path.abspath(os.path.dirname(__file__))
+README = open(os.path.join(here, "README.txt")).read()
+README = README.split("\n\n", 1)[0] + "\n"
+CHANGES = open(os.path.join(here, "CHANGES.txt")).read()
+
+requires = [
+    "pyramid",
+    "pymongo",
+    ]
+
+entry_points = """
+    [paste.app_factory]
+    main = pyramid_mongodb:main
+"""
+
+setup(name="pyramid_mongodb",
+      version="0.0",
+      description="Pyramid application template for a traversal-based URL mapping and MongoDB project.",
+      long_description=README,
+      #long_description=README + "\n\n" +  CHANGES,
+      classifiers=[
+        "Intended Audience :: Developers",
+        "Framework :: Pylons",
+        "Programming Language :: Python",
+        "License :: OSI Approved :: MIT License",
+        ],
+      keywords="web wsgi pylons pyramid",
+      author="Niall O'Higgins",
+      author_email="niallo@unworkable.org",
+      url="https://github.com/niallo/pyramid_mongodb",
+      license="MIT",
+      packages=find_packages(),
+      include_package_data=True,
+      zip_safe=False,
+      tests_require = requires,
+      install_requires = requires,
+      test_suite="pyramid_mongodb",
+      entry_points=entry_points,
+      )
+
