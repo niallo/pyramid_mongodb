@@ -15,8 +15,8 @@ requires = [
     ]
 
 entry_points = """
-    [paste.app_factory]
-    main = pyramid_mongodb:main
+    [paste.paster_create_template]
+    pyramid_mongodb = pyramid_mongodb.paster_templates:MongodbProjectTemplate
 """
 
 setup(name="pyramid_mongodb",
@@ -30,7 +30,7 @@ setup(name="pyramid_mongodb",
         "Programming Language :: Python",
         "License :: OSI Approved :: MIT License",
         ],
-      keywords="web wsgi pylons pyramid",
+      keywords="web wsgi pylons pyramid mongodb",
       author="Niall O'Higgins",
       author_email="niallo@unworkable.org",
       url="https://github.com/niallo/pyramid_mongodb",
