@@ -22,6 +22,6 @@ class PyramidTemplate(Template):
 
 class MongodbProjectTemplate(PyramidTemplate):
     _template_dir = 'pyramid_mongodb'
-    summary = 'pyramid mongodb project'
+    summary = 'pyramid MongoDB project'
     template_renderer = staticmethod(paste_script_template_renderer)
 
