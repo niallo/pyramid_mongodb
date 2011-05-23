@@ -2,7 +2,7 @@
 Overview
 ========
 
-pyramid_mongodb is a simple Paster template or scaffold for the Pyramid Web
+``pyramid_mongodb`` is a simple Paster template or scaffold for the Pyramid Web
 Framework. It provides URL mapping via traversal and persistence via MongoDB.
 It is based on the "starter" template included in Pyramid core, and Mike Orr's
 "Akhet" template.
@@ -15,12 +15,36 @@ Installing
 
 Latest stable releases can be found at http://pypi.python.org/pypi/pyramid_mongodb
 
-You can install from Pypi using easy_install or pip, e.g.:
+You can install from Pypi using ``easy_install`` or ``pip``:
 
 ``easy_install pyramid_mongodb``
 
 or alternatively:
 
 ``pip install pyramid_mongodb``
+
+
+===
+Use
+===
+
+Once ``pyramid_mongodb`` is installed, you should see it in the list of
+available templates when you run ``paster create --list-templates``:
+
+
+::
+$ paster create --list-templates
+Available templates:
+  basic_package:          A basic setuptools-enabled package
+  paste_deploy:           A web application deployed through paste.deploy
+  pyramid_alchemy:        pyramid SQLAlchemy project using traversal
+  pyramid_mongodb:        pyramid MongoDB project
+  pyramid_routesalchemy:  pyramid SQLAlchemy project using url dispatch (no traversal)
+  pyramid_starter:        pyramid starter project
+  pyramid_zodb:           pyramid ZODB starter project
+::
+
+You can create a project with MongoDB support by running ``paster create -t
+pyramid_mongodb``.
 
 
