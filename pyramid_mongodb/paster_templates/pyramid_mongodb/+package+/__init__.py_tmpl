@@ -3,7 +3,6 @@ from pyramid.events import subscriber
 from pyramid.events import NewRequest
 import pymongo
 
-from {{package}}.models import appmaker
 from {{package}}.resources import Roo
 
 def main(global_config, **settings):
