@@ -33,6 +33,7 @@ available templates when you run ``paster create --list-templates``:
 
 
 ::
+
 $ paster create --list-templates
 Available templates:
   basic_package:          A basic setuptools-enabled package
@@ -42,6 +43,7 @@ Available templates:
   pyramid_routesalchemy:  pyramid SQLAlchemy project using url dispatch (no traversal)
   pyramid_starter:        pyramid starter project
   pyramid_zodb:           pyramid ZODB starter project
+
 ::
 
 You can create a project with MongoDB support by running ``paster create -t
