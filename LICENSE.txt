@@ -1,4 +1,4 @@
-Copyright (c) 2011, Niall O'Higgins <niallo@unworkable.org>
+Copyright (c) 2011, Niall O'Higgins <nialljohiggins@gmail.com>
 
 MIT License -- http://www.opensource.org/licenses/mit-license
 
