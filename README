@@ -15,14 +15,12 @@ Installing
 
 Latest stable releases can be found at http://pypi.python.org/pypi/pyramid_mongodb
 
-You can install from Pypi using ``easy_install`` or ``pip``:
+You can install from Pypi using ``easy_install`` or ``pip``::
 
-::
     easy_install pyramid_mongodb
 
-or alternatively:
+or alternatively::
 
-::
     pip install pyramid_mongodb
 
 
@@ -31,7 +29,9 @@ Use
 ===
 
 Once ``pyramid_mongodb`` is installed, you should see it in the list of
-available templates when you run ::paster create --list-templates:
+available templates when you run ::
+
+    paster create --list-templates:
 
 
 ::
