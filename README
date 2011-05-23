@@ -31,7 +31,7 @@ Use
 Once ``pyramid_mongodb`` is installed, you should see it in the list of
 available templates when you run ::
 
-    paster create --list-templates:
+    paster create --list-templates
 
 
 ::
