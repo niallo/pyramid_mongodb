@@ -3,7 +3,7 @@ from pyramid.events import subscriber
 from pyramid.events import NewRequest
 import pymongo
 
-from {{package}}.resources import Roo
+from {{package}}.resources import Root
 
 def main(global_config, **settings):
     """ This function returns a WSGI application.
