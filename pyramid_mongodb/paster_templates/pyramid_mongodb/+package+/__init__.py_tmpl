@@ -24,4 +24,5 @@ def main(global_config, **settings):
     conn = pymongo.Connection(db_uri)
     config.registry.settings['mongodb_conn'] = conn
     config.add_subscriber(add_mongo_db, NewRequest)
+    config.scan('{{package}}')
     return config.make_wsgi_app()
