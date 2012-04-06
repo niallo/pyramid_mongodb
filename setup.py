@@ -10,7 +10,6 @@ README = open(os.path.join(here, "README")).read()
 README = README.split("\n\n", 1)[0] + "\n"
 
 requires = [
-    "PasteScript",
     "pyramid",
     "pymongo",
     ]
