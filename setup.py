@@ -10,12 +10,15 @@ README = open(os.path.join(here, "README")).read()
 README = README.split("\n\n", 1)[0] + "\n"
 
 requires = [
+    "PasteScript",
     "pyramid",
     "pymongo",
     ]
 
 entry_points = """
     [paste.paster_create_template]
+    pyramid_mongodb = pyramid_mongodb.paster_templates:MongodbProjectTemplate
+    [pyramid.scaffold]
     pyramid_mongodb = pyramid_mongodb.paster_templates:MongodbProjectTemplate
 """
 
