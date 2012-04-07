@@ -17,6 +17,8 @@ requires = [
 entry_points = """
     [paste.paster_create_template]
     pyramid_mongodb = pyramid_mongodb.paster_templates:MongodbProjectTemplate
+    [pyramid.scaffold]
+    pyramid_mongodb = pyramid_mongodb.paster_templates:MongodbProjectTemplate
 """
 
 setup(name="pyramid_mongodb",
