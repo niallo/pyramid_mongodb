@@ -22,7 +22,7 @@ entry_points = """
 """
 
 setup(name="pyramid_mongodb",
-      version="1.0",
+      version="1.3",
       description="Pyramid application template for a traversal-based URL mapping and MongoDB project.",
       long_description=README,
       #long_description=README + "\n\n" +  CHANGES,
