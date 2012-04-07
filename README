@@ -31,23 +31,17 @@ Use
 Once ``pyramid_mongodb`` is installed, you should see it in the list of
 available templates when you run ::
 
-    paster create --list-templates
+    pcreate -l
 
 
 ::
 
-  $ paster create --list-templates
-  Available templates:
-    basic_package:          A basic setuptools-enabled package
-    paste_deploy:           A web application deployed through paste.deploy
-    pyramid_alchemy:        pyramid SQLAlchemy project using traversal
-    pyramid_mongodb:        pyramid MongoDB project
-    pyramid_routesalchemy:  pyramid SQLAlchemy project using url dispatch (no traversal)
-    pyramid_starter:        pyramid starter project
-    pyramid_zodb:           pyramid ZODB starter project
+  $ pcreate -l
+  Available scaffolds:
+    alchemy:          Pyramid SQLAlchemy project using url dispatch
+    pyramid_mongodb:  pyramid MongoDB project
+    starter:          Pyramid starter project
+    zodb:             Pyramid ZODB project using traversal
 
 
-You can create a project with MongoDB support by running ``paster create -t
-pyramid_mongodb``.
-
-
+You can create a project with MongoDB support by running ``pcreate -s pyramid_mongodb <name of project>``.
