@@ -1,5 +1,4 @@
 from pyramid.config import Configurator
-from pyramid.events import subscriber
 from pyramid.events import NewRequest
 import pymongo
 
